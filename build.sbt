@@ -1,6 +1,6 @@
 name := "lift-liftscreen-css-binding"
  
-scalaVersion := "2.9.1"
+scalaVersion := "2.9.2"
  
 seq(com.github.siasia.WebPlugin.webSettings :_*)
 
@@ -12,7 +12,7 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= {
-  val liftVersion = "2.4" // Put the current/latest lift version here
+  val liftVersion = "2.5-M2" // Put the current/latest lift version here
   Seq(
     "net.liftweb" %% "lift-webkit" % liftVersion % "compile->default",
     "net.liftweb" %% "lift-mapper" % liftVersion % "compile->default",
@@ -24,7 +24,7 @@ libraryDependencies ++= {
 // Customize any further dependencies as desired
 libraryDependencies ++= Seq(
   "org.eclipse.jetty" % "jetty-webapp" % "7.3.0.v20110203" % "container,test", // For Jetty 7
-  "org.specs2" %% "specs2" % "1.7.1" % "test",
+  "org.specs2" %% "specs2" % "1.12.1" % "test",
   "javax.servlet" % "servlet-api" % "2.5" % "provided->default",
   "ch.qos.logback" % "logback-classic" % "0.9.30" % "compile->default" // Logging
 )
